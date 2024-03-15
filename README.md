@@ -3,6 +3,13 @@ Updates for LowCoder to getit running inside OpenShift Container Platform
 
 ## All-In-One Image
 
+### Running in Openshift
+
+Important Notice: The Image created by this repository can be used inside OpenShift with the following restriction:
+
+DO NOT SET "LOWCODER_PUID" OR "LOWCODER_PGID". Or - if you really have to - set it to their default values of "9001".
+Everything else can be set via env vars as needed.
+
 ### Changes needed to current lowcoder v2.3 release to run inside Openshift
 
 1. Dockerfile
